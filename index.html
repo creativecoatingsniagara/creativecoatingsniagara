@@ -93,16 +93,24 @@
 <section id="gallery" class="gallery-section">
   <div class="container">
     <h2>Our Recent Work</h2>
+    
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="residential">Residential</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+      <button class="filter-btn" data-filter="industrial">Industrial</button>
+    </div>
+
     <div class="gallery">
-      <div class="gallery-item">
+      <div class="gallery-item" data-category="residential">
         <img src="project1.jpg" alt="Professional Exterior Painting in Niagara">
         <p>Exterior Transformation</p>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-category="residential">
         <img src="project2.jpg" alt="Beautiful Interior Painting St. Catharines">
         <p>Modern Interior Finish</p>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-category="commercial">
         <img src="project3.jpg" alt="Durable Epoxy Flooring Niagara">
         <p>Commercial Epoxy Coating</p>
       </div>
@@ -150,5 +158,6 @@
   </div>
 </footer>
 
+<script src="gallery.js"></script>
 </body>
 </html>

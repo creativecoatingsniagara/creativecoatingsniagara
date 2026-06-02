@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -149,6 +153,29 @@ body {
   margin-bottom: 40px;
 }
 
+/* FILTER BUTTONS */
+.filter-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  background: #fff;
+  border: 2px solid #d4af37;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: #d4af37;
+  color: #fff;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -157,6 +184,7 @@ body {
 
 .gallery-item {
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .gallery-item img {
@@ -165,6 +193,12 @@ body {
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
 }
 
 .gallery-item p {
